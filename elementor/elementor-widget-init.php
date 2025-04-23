@@ -71,6 +71,7 @@ if (! class_exists('WPBoilerplate_Elementor_Widget_Init')) {
 			if (! class_exists('Elementor\Widget_Base')) {
 				return;
 			}
+
 			$elementor_widgets = array(
 				'accordion',
 				'empty-div',
@@ -78,8 +79,6 @@ if (! class_exists('WPBoilerplate_Elementor_Widget_Init')) {
 				'header-slider-one',
 				'heading-title',
 				'icon-box-one',
-				'bird-content',
-				'stock-content',
 				'team-list',
 				'investment-slider',
 				'process-single-item',

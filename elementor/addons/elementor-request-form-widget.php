@@ -115,13 +115,9 @@ class WPBoilerplate_Request_Form_Widget extends Widget_Base
     protected function render()
     {
         $settings = $this->get_settings();
-        /**
-         * main part
-         */
+    
         $shortcode = $settings['wpboilerplate_contact_form_id'];
-?>
 
-        <?php
         if (!empty($shortcode)):
 
             echo do_shortcode('[contact-form-7  id="' . $shortcode . '"]');
