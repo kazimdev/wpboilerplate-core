@@ -2,24 +2,26 @@
     >>>Css Indexing
     ------------------
     01.Global Css
-
 */
+
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.preloader img{
+
+.preloader img {
   transform: translate(-50%, -50%);
   animation: animUpDown 2s infinite ease-in-out;
 }
 
 @keyframes animUpDown {
-  0%, 100% {
-      transform: translate(-50%, -50%) translateX(0);
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateX(0);
   }
   50% {
-      transform: translate(-50%, -50%) translateX(-20px);
+    transform: translate(-50%, -50%) translateX(-20px);
   }
 }
 
@@ -37,7 +39,7 @@ header#masthead {
   width: 84%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .wpboilerplate-search-box {
   margin-left: 48px;
@@ -54,6 +56,10 @@ header#masthead {
   outline: 0;
   background: transparent;
 }
+.navbar-nav li a {
+  padding: 10px;
+}
+
 .wpboilerplate-header-right {
   width: 50%;
   display: flex;
@@ -97,71 +103,6 @@ header#masthead {
 .btn-wrap .boxed-btn.login-btn {
   line-height: 14px;
   margin-left: 16px;
-}
-
-#tax_toggle {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-.tax-switch {
-  position: relative;
-  display: inline-block;
-  min-width: 134px;
-  height: 34px;
-}
-
-.tax-switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.tax-switch .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 7px;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  width: 34px;
-  height: 20px;
-}
-
-.tax-switch .slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 2px;
-  bottom: 2px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.tax-switch input:checked + .slider {
-  background-color: #884df8;
-}
-
-.tax-switch input:focus + .slider {
-  box-shadow: 0 0 1px #884df8;
-}
-
-.tax-switch input:checked + .slider:before {
-  -webkit-transform: translateX(14px);
-  -ms-transform: translateX(14px);
-  transform: translateX(14px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
 
 .yith-wcbm-badge {
@@ -663,7 +604,7 @@ span.yith-wcwl-add-to-wishlist-button__label {
   margin-bottom: 16px;
 }
 
-.cky-btn-revisit-wrapper{
+.cky-btn-revisit-wrapper {
   z-index: 9999 !important;
 }
 
