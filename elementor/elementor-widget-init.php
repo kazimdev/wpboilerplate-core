@@ -72,23 +72,7 @@ if (! class_exists('WPBoilerplate_Elementor_Widget_Init')) {
 				return;
 			}
 
-			$elementor_widgets = array(
-				'accordion',
-				'empty-div',
-				'read-more-item',
-				'header-slider-one',
-				'heading-title',
-				'icon-box-one',
-				'team-list',
-				'investment-slider',
-				'process-single-item',
-				'product-offer-tabs',
-				'product-category-item',
-				'product-category-tabs',
-				'platform-single-item',
-				'request-form',
-				'video-hover',
-			);
+			$elementor_widgets = require_once WPBOILERPLATE_CORE_ROOT_PATH . '/config/elementor';
 
 			$elementor_widgets = apply_filters('wpboilerplate_elementor_widget', $elementor_widgets);
 			ksort($elementor_widgets);
